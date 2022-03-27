@@ -1121,17 +1121,6 @@ ul {
 /* End Team*/
 /* Start Search */
 .search {
-  /*
-  display: grid;
-  grid-template-columns: [first]45% [line2]55% [end];
-  grid-template-rows: auto;
-  background-color: #ebeffe;
-  width: 1280px;
-  height: 538px;
-  flex-grow: 0;
-  margin: 80.9px 80px 157px;
-  padding: 0 0 83px 60px;
-  border-radius: 25px;*/
   display: flex;
   flex-direction: row;
   width: 1280px;
@@ -1143,18 +1132,6 @@ ul {
   background-color: #ebeffe;
 }
 .searchHeader {
-  /*
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  color: #2f2d4a;
-  text-align: left;
-  letter-spacing: -1.32px;
-  line-height: 1.06;
-  font-size: 44px;
-  margin-bottom: 1%;
-  width: 490px;
-  height: 86px;*/
   flex-grow: 0;
   width: 550px;
   margin: 80px 0 32px 21px;
@@ -1169,15 +1146,6 @@ ul {
   color: #2f2d4a;
 }
 .searchPar {
-  /*
-  grid-column-start: 1;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  font-size: 22px;
-  text-align: left;
-  color: #517b8c;
-  font-weight: lighter;
-  margin-top: 1%;*/
   width: 455px;
   height: 71px;
   flex-grow: 0;
@@ -1193,19 +1161,6 @@ ul {
   color: #517b8c;
 }
 .searchButton {
-  /*
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  width: 257px;
-  height: 63px;
-  flex-grow: 0;
-  margin: 20px 232px 0 1px;
-  padding: 20px 23.5px 16px 26px;
-  border-radius: 20px;
-  background-color: #385df9;
-  color: #fff;
-  */
   width: 257px;
   height: 63px;
   flex-grow: 0;
@@ -1218,13 +1173,6 @@ ul {
   font-size: 18px;
 }
 .searchHouse {
-  /*
-  grid-column-start: 2;
-  grid-row-start: span 3;*/
-  /*width: 700px;
-  height: 400px;
-  margin: 0 220px 0 0;
-  float: right;*/
   width: 506px;
   height: 371px;
   margin: 84px 111px 0 113px;
