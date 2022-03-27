@@ -704,12 +704,18 @@ ul {
 /* End Animation */
 /* Start Features */
 .features {
-  padding-top: var(--section-padding);
+  /*
+  padding-top: var(--section-padding);*/
   padding-bottom: var(--section-padding);
   background-color: var(--section-background);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .features {
+    flex-wrap: wrap;
+  }
 }
 .featContainer {
   display: grid;
@@ -742,10 +748,17 @@ ul {
   padding: 20px;
   text-align: center;
 }
-#feat {
-  width: 100%;
-  margin-left: 430px;
+.featContainer2 {
+  /*width: 100%;*/
+  display: flex;
+  flex-direction: row;
+  /*margin-left: 430px;*/
 }
+@media screen and(min-width:900px) {
+  .featContainer2 {
+    flex-direction: column;
+  }
+} /*not working problem here*/
 .featH {
   font-weight: 800;
   margin: 30px 0;
@@ -1108,61 +1121,61 @@ ul {
 /* End Team*/
 /* Start Search */
 .search {
-  display: grid;
-  grid-template-columns: [first]45% [line2]55% [end];
-  grid-template-rows: auto;
-  background-color: #ebeffe;
+  display: flex;
+  flex-direction: row;
   width: 1280px;
   height: 538px;
   flex-grow: 0;
   margin: 80.9px 80px 157px;
   padding: 0 0 83px 60px;
   border-radius: 25px;
+  background-color: #ebeffe;
 }
 .searchHeader {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  color: #2f2d4a;
-  text-align: left;
-  letter-spacing: -1.32px;
-  line-height: 1.06;
+  flex-grow: 0;
+  width: 550px;
+  margin: 80px 0 32px 21px;
+  font-family: Poppins;
   font-size: 44px;
   font-weight: bolder;
-  margin-bottom: 1%;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.06;
+  letter-spacing: -1.32px;
+  text-align: left;
+  color: #2f2d4a;
 }
 .searchPar {
-  grid-column-start: 1;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  font-size: 22px;
+  width: 455px;
+  height: 71px;
+  flex-grow: 0;
+  margin: 32px 35px 0 23px;
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   text-align: left;
   color: #517b8c;
-  font-weight: lighter;
-  margin-top: 1%;
 }
 .searchButton {
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-row-end: 4;
   width: 257px;
   height: 63px;
   flex-grow: 0;
-  margin: 20px 232px 0 1px;
+  margin: 80px 232px 0 1px;
   padding: 20px 23.5px 16px 26px;
   border-radius: 20px;
-  background-color: #385df9;
   border-style: none;
+  background-color: #385df9;
   color: #fff;
   font-size: 18px;
 }
 .searchHouse {
-  grid-column-start: 2;
-  grid-row-start: span 3;
-  width: 700px;
-  height: 400px;
-  margin: 0 220px 0 0;
-  float: right;
+  width: 506px;
+  height: 371px;
+  margin: 84px 111px 0 113px;
 }
 /* End Search */
 /* Start Footer*/
