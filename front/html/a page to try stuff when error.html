@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Popup Design</title>
+        <link rel="stylesheet" href="../css/test.css">
+    </head>
+    <body>
+        <div class="container">
+            <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+            <div class="popup" id="popup">
+                <img src="../assets/man-add 1.png" class="popImg">
+                  <h2>What is your name?</h2>
+                  <p class="popP">We just need your name to create account for you</p>
+                  <a class="close" href="#" onclick="closePopup()"><img src="../assets/Group 8.png" alt="close"></a>
+                  <div class="content">
+                      <p class="popContP">Your Name</p>
+                      <input type="text" id="Name" name="yourName" placeholder="Full Name" >
+                      <button id="nameEnter"><a href="../html/onboaded i.html i.html"><img src="../assets/3Vector.png"> </a></button>
+            </div>
+        </div>
+        <script>
+            let popup = document.getElementById("popup");
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+    </body>
+</html>

@@ -51,21 +51,30 @@
               <h1 id="landH1">Find your dream House Personalized for you</h1>
               <div class ="landingSearch">
                   <input type="text" id="city" name="city"  placeholder="Where do you need your house?">
-                  <a class="popButton" id="cityEnter" href="#popUp1"><img src="assets/3Vector.png"></a>
+                  <a class="popButton" id="cityEnter" onclick="openPopup()"><img src="assets/3Vector.png"></a>
               </div>
-              <div id="popUp1" class="overlay">
-                <div class="popup">
-                  <img src="assets/man-add 1.png" class="popImg">
-                  <h2>What is your name?</h2>
-                  <p class="popP">We just need your name to create account for you</p>
-                  <a class="close" href="#"><img src="assets/Group 8.png" alt="close"></a>
-                  <div class="content">
-                      <p class="popContP">Your Name</p>
-                      <input type="text" id="Name" name="yourName" placeholder="Full Name" >
-                      <button id="nameEnter"><a href="html/onboaded i.html"><img src="assets/3Vector.png"> </a></button>
-                  </div>
+              <div class="popup" id="popup">
+                <img src="assets/man-add 1.png" class="popImg">
+                <h2>What is your name?</h2>
+                <p class="popP">We just need your name to create account for you</p>
+                <a class="close" href="#"><img src="assets/Group 8.png" alt="close"></a>
+                <div class="content">
+                    <p class="popContP">Your Name</p>
+                    <input type="text" id="Name" name="yourName" placeholder="Full Name" >
+                    <button id="nameEnter"><a href="html/onboaded i.html"><img src="assets/3Vector.png"> </a></button>
                 </div>
               </div>
+              <!--PopUp script Start-->
+              <script>
+                let popup = document.getElementById("popup");
+                function openPopup(){
+                  popup.classList.add("open-popup");
+                }
+                function closePopup(){
+                  popup.classList.remove("open-popup");
+                }
+              </script>
+              <!--PopUp script End-->
               <p class="light" id="landP">Enter a City</p>
           </div>
           <div class="landImage">
