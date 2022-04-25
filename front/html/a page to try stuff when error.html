@@ -1,32 +1,200 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Popup Design</title>
-        <link rel="stylesheet" href="../css/test.css">
-    </head>
-    <body>
-        <div class="container">
-            <button type="submit" class="btn" onclick="openPopup()">Submit</button>
-            <div class="popup" id="popup">
-                <img src="../assets/man-add 1.png" class="popImg">
-                  <h2>What is your name?</h2>
-                  <p class="popP">We just need your name to create account for you</p>
-                  <a class="close" href="#" onclick="closePopup()"><img src="../assets/Group 8.png" alt="close"></a>
-                  <div class="content">
-                      <p class="popContP">Your Name</p>
-                      <input type="text" id="Name" name="yourName" placeholder="Full Name" >
-                      <button id="nameEnter"><a href="../html/onboaded i.html i.html"><img src="../assets/3Vector.png"> </a></button>
-            </div>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/main.css">
+<style>/*
+.bg-img {
+  /* The image used 
+  background-image: url("../assets/sherif-moharram-KUxBU4-T2cY-unsplash\ 1.png");*/
+/*
+  min-height: 380px;
+}*/
+
+/* Add styles to the form container 
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}*/
+
+/* Full-width input fields *//*
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+*/
+/* Slide Show Start */
+.slideshow{/*
+    display: flex;*/
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+.myslides{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Slide Show End*/
+.city_img{
+    border-radius: 20px;
+    margin: 32px 20px 10px 15px;
+}
+.city_explore{
+    width: 565px;
+    height: 101.2px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 330px 0 0 0;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.city_explore section h2{
+    width: 74.8px;
+  height: 39.6px;
+  display:flex;
+  margin: 0 167.8px 0.4px 0.4px;
+  font-family: Poppins;
+  font-size: 26.4px;
+  color: #2f2d4a;
+}
+/* Set a style for the submit button */
+.explore_Btn{
+    width: 137.5px;
+  height: 48px;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  border-style: none;
+  margin: 26.7px 0 26.7px 136px;
+  padding: 11.6px 18.6px 8.3px 20.1px;
+  border-radius: 15px;
+  background-color: #385df9;
+  font-size: 19.8px;
+  text-align: left;
+}
+
+.explore_Btn :hover {/*problem here*/
+  opacity: 1;
+}
+.Rectangle-7, .Rectangle-6{
+    transition: 0.6s ease;
+    cursor: pointer;
+    user-select: none;
+}
+.Rectangle-7:hover ,.Rectangle-6:hover{
+    background-color: rgba(0,0,0.2,0.1);
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+    <p class="Explore &nbsp;&nbsp;&nbsp;&nbsp;-by-city">Explore by City</p>
+          <p class="Book-an-online-appoitment">Popular now on Dream House</p>
+          <div class="popular-scroller">
+            <button class="Rectangle-7" onclick="plusSlides(-1)"> <img src="../assets/3Vector.png"> </button>
+            <button class="Rectangle-6" onclick="plusSlides(1)"> <img src="../assets/3Vector.png"> </button>
+          </div>
+</div>
+<div class="slideshow">
+    <div class="myslides">
+        <img class="city_img" alt="cityveiw" src="../assets/sherif-moharram-KUxBU4-T2cY-unsplash 1.png">
+        <div class="city_explore">
+            <section>
+                <h2 class="city">Cairo</h2>
+                <p>920+ properties are available</p>
+            </section>
+            <button class="explore_Btn">
+                Explore &nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="../assets/7Vector.png">
+            </button>
         </div>
-        <script>
-            let popup = document.getElementById("popup");
-            function openPopup(){
-                popup.classList.add("open-popup");
-            }
-            function closePopup(){
-                popup.classList.remove("open-popup");
-            }
-        </script>
-    </body>
+    </div>
+    <div class="myslides">
+        <img class="city_img" alt="cityveiw" src="../assets/sherif-moharram-KUxBU4-T2cY-unsplash 1.png">
+        <div class="city_explore">
+            <section>
+                <h2 class="city">6October</h2>
+                <p>800+ properties are available</p>
+            </section>
+            <button class="explore_Btn">
+                Explore &nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="../assets/7Vector.png">
+            </button>
+        </div>
+    </div>
+    <div class="myslides">
+        <img class="city_img" alt="cityveiw" src="../assets/sherif-moharram-KUxBU4-T2cY-unsplash 1.png">
+        <div class="city_explore">
+            <section>
+                <h2 class="city">Alexandria</h2>
+                <p>450+ properties are available</p>
+            </section>
+            <button class="explore_Btn">
+                Explore &nbsp;&nbsp;&nbsp;&nbsp; 
+                <img src="../assets/7Vector.png">
+            </button>
+        </div>
+    </div>
+    <div class="myslides">
+        <img class="city_img" alt="cityveiw" src="../assets/sherif-moharram-KUxBU4-T2cY-unsplash 1.png">
+        <div class="city_explore">
+            <section>
+                <h2 class="city">Maadi</h2>
+                <p>500+ properties are available</p>
+            </section>
+            <button class="explore_Btn">
+                Explore &nbsp;&nbsp;&nbsp;&nbsp; 
+                <img src="../assets/7Vector.png">
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {
+          slideIndex = 1}    
+      if (n < 1) {
+          slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+    </script>
+
+</body>
 </html>
