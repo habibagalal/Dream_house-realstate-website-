@@ -516,44 +516,45 @@ ul {
   animation: bouncing 1.5s infinite;
 }
 /* Start PopUp */
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
 .popup {
-  margin: 70px auto;
   padding: 20px;
   background: #fff;
-  border-radius: 10px;
-  width: 650px;
-  height: 400px;
-  position: relative;
-  transition: all 5s ease-in-out;
+  border-radius: 20px;
+  width: 652px;
+  height: 405px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1); /*So it be in the cinter of the webPage*/
+  text-align: center;
+  padding: 0 30px 30px;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 3;
 }
 .popImg {
-  margin: 5px 0 5px 270px;
+  margin: 5px 0;
+  width: 70px;
+  height: 72px;
 }
 .popup h2 {
-  margin: 0 0 0 160px;
+  margin: 5px 0;
   color: #305567;
   font-size: 31px;
   font-family: "Poppins";
   font-weight: 500;
 }
 .popP {
-  margin: 4px 0 32px 0;
+  margin: 6px 0;
   text-align: center;
   font-family: Poppins;
   font-weight: normal;
@@ -607,22 +608,6 @@ ul {
   font-weight: bold;
   text-decoration: none;
   color: #333;
-}
-.popup .close:hover {
-  color: #06d85f;
-}
-.popup .content {
-  max-height: 50%;
-  overflow: auto;
-}
-
-@media screen and (max-width: 700px) {
-  .box {
-    width: 70%;
-  }
-  .popup {
-    width: 70%;
-  }
 }
 /* End PopUp */
 /* End Landing */
@@ -1042,7 +1027,7 @@ ul {
   border-radius: 5px;
   margin: 32px 90px 80px 40.5px; /*
   padding: 31.3px 36.3px 31.9px 44px;*/
-}
+} 
 /* End Popular*/
 /* Start Team*/
 .Team {
