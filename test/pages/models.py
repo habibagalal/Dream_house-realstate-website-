@@ -5,10 +5,6 @@ from django.forms import CharField
 # Create your models here.
 
 
-class Saved_items(models.Model):
-    name = models.CharField(max_length=100)
-
-
 class Personal_info (models.Model):
     name = models.CharField(max_length=100)
 
