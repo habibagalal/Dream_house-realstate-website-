@@ -1,0 +1,17 @@
+/*Start Portfolio*/
+.detail_page_special_heading{
+    width: 533px;
+  height: 36px;
+  flex-grow: 0;
+  margin: 6px 145px 6px 0;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #224a5d;
+}
+/*End portfolio*/

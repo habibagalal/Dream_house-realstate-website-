@@ -1,0 +1,21 @@
+.sign .welcome {
+    width: 85%;
+    height: 48px;
+    flex-grow: 0;
+    margin: 24px 95px 32px;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3c3a55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+  
+  }

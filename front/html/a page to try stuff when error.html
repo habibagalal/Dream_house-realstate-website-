@@ -2,199 +2,191 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/main.css">
-<style>/*
-.bg-img {
-  /* The image used 
-  background-image: url("../assets/sherif-moharram-KUxBU4-T2cY-unsplash\ 1.png");*/
-/*
-  min-height: 380px;
-}*/
+<style>
+    body {
+        background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .box {
+        width: 40%;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.2);
+        padding: 35px;
+        border: 2px solid #fff;
+        border-radius: 20px/50px;
+        background-clip: padding-box;
+        text-align: center;
+    }
 
-/* Add styles to the form container 
-.container {
-  position: absolute;
-  right: 0;
-  margin: 20px;
-  max-width: 300px;
-  padding: 16px;
-  background-color: white;
-}*/
-
-/* Full-width input fields *//*
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-*/
-/* Slide Show Start */
-.slideshow{/*
-    display: flex;*/
-    position: relative;
-    max-width: 1000px;
-    margin: auto;
-}
-.myslides{
-    position: relative;
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+    border-radius: 20px;
+    width: 42%;
+    height: 405px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    flex-wrap: nowrap;
+    text-align: center;
+    margin: 0 auto;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+}
+
+.popup {
+    margin-top: 20px;
+  padding: 20px;
+  width: 90%;
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popImg {
+  margin: 5px 0;
+  width: 70px;
+  height: 72px;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+    opacity: 0.8;
+}
+.popup h2 {/*
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;*/
+  margin: 5px 0;
+  color: #305567;
+  font-size: 31px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.popP {
+  margin: 6px 0;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #4c5355;
+}
+
+.popup .content {
+    display:flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-/* Slide Show End*/
-.city_img{
-    border-radius: 20px;
-    margin: 32px 20px 10px 15px;
-}
-.city_explore{
-    width: 565px;
-    height: 101.2px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 330px 0 0 0;
-    position: absolute;
-    background-color: white;
-    border-radius: 20px;
-}
 
-.city_explore section h2{
-    width: 74.8px;
-  height: 39.6px;
-  display:flex;
-  margin: 0 167.8px 0.4px 0.4px;
-  font-family: Poppins;
-  font-size: 26.4px;
-  color: #2f2d4a;
-}
-/* Set a style for the submit button */
-.explore_Btn{
-    width: 137.5px;
-  height: 48px;
-  color:#fff;
-  display: flex;
-  justify-content: center;
-  border-style: none;
-  margin: 26.7px 0 26.7px 136px;
-  padding: 11.6px 18.6px 8.3px 20.1px;
-  border-radius: 15px;
-  background-color: #385df9;
-  font-size: 19.8px;
+.popContP {
+  margin: 10px 0 0 85px;
   text-align: left;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #172d45;
 }
-
-.explore_Btn :hover {/*problem here*/
-  opacity: 1;
+.popup input {
+  margin: 0 0 0 85px;
+  height: 50px;
+  width: 390px;
+  border-radius: 10px;
+  border: solid #a0a7af;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #172d45;
 }
-.Rectangle-7, .Rectangle-6{
-    transition: 0.6s ease;
-    cursor: pointer;
-    user-select: none;
+.popup input::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #172d45;
+  height: 100%;
+  background-image: url('../assets/Vector.png');
+  background-position: 10px -0.2px; 
+    background-repeat: no-repeat;
+  
 }
-.Rectangle-7:hover ,.Rectangle-6:hover{
-    background-color: rgba(0,0,0.2,0.1);
+#nameEnter {
+  margin: 10px;
+  width: 54px;
+  height: 50px;
+  border: solid #a0a7af;
+  border-radius: 10px;
+  background-color: #fff;
+}
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
 }
 </style>
 </head>
 <body>
+    <div class="box">
+	    <a class="button" href="#popup">Let me Pop up</a>
+    </div>
 
-<div class="city">
-    <p class="Explore &nbsp;&nbsp;&nbsp;&nbsp;-by-city">Explore by City</p>
-          <p class="Book-an-online-appoitment">Popular now on Dream House</p>
-          <div class="popular-scroller">
-            <button class="Rectangle-7" onclick="plusSlides(-1)"> <img src="../assets/3Vector.png"> </button>
-            <button class="Rectangle-6" onclick="plusSlides(1)"> <img src="../assets/3Vector.png"> </button>
-          </div>
-</div>
-<div class="slideshow">
-    <div class="myslides">
-        <img class="city_img" alt="cityveiw" src="../assets/sherif-moharram-KUxBU4-T2cY-unsplash 1.png">
-        <div class="city_explore">
-            <section>
-                <h2 class="city">Cairo</h2>
-                <p>920+ properties are available</p>
-            </section>
-            <button class="explore_Btn">
-                Explore &nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="../assets/7Vector.png">
-            </button>
-        </div>
+    <div id="popup" class="overlay">
+	    <div class="popup">
+            <img class="popImg" src="../assets/man-add 1.png">
+            <h2>What is your name?</h2>
+            <p class="popP">We just need your name to create account for you</p>
+            <a class="close" href="#"><img src="../assets/Group 8.png" alt="close"></a>
+            <p class="popContP">Your Name</p>
+            <div class="content">
+                <input type="text" id="Name" name="yourName" placeholder="         Full Name" >
+                <button id="nameEnter"><a href="../html/onboaded i.html"><img src="../assets/3Vector.png"> </a></button>
+            </div>
+	    </div>
     </div>
-    <div class="myslides">
-        <img class="city_img" alt="cityveiw" src="../assets/sherif-moharram-KUxBU4-T2cY-unsplash 1.png">
-        <div class="city_explore">
-            <section>
-                <h2 class="city">6October</h2>
-                <p>800+ properties are available</p>
-            </section>
-            <button class="explore_Btn">
-                Explore &nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="../assets/7Vector.png">
-            </button>
-        </div>
-    </div>
-    <div class="myslides">
-        <img class="city_img" alt="cityveiw" src="../assets/sherif-moharram-KUxBU4-T2cY-unsplash 1.png">
-        <div class="city_explore">
-            <section>
-                <h2 class="city">Alexandria</h2>
-                <p>450+ properties are available</p>
-            </section>
-            <button class="explore_Btn">
-                Explore &nbsp;&nbsp;&nbsp;&nbsp; 
-                <img src="../assets/7Vector.png">
-            </button>
-        </div>
-    </div>
-    <div class="myslides">
-        <img class="city_img" alt="cityveiw" src="../assets/sherif-moharram-KUxBU4-T2cY-unsplash 1.png">
-        <div class="city_explore">
-            <section>
-                <h2 class="city">Maadi</h2>
-                <p>500+ properties are available</p>
-            </section>
-            <button class="explore_Btn">
-                Explore &nbsp;&nbsp;&nbsp;&nbsp; 
-                <img src="../assets/7Vector.png">
-            </button>
-        </div>
-    </div>
-</div>
-
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) {
-          slideIndex = 1}    
-      if (n < 1) {
-          slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slides[slideIndex-1].style.display = "block";
-    }
-    </script>
-
 </body>
 </html>

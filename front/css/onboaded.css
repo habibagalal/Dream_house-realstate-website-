@@ -1,3 +1,50 @@
+/*Start onboaded*/
+.onboaded_links{
+  color:#fff;
+}
+.onboaded_prev_next{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 0 68px 0;
+}
+.onboaded_previous{
+  flex-grow: 0;
+  margin: 0 0 0 12px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #385df9;
+}
+.onboaded_previous img{
+  width: 11px;
+  height: 13px;
+  margin: 0px 11px 0 0;
+}
+.filtersButton {
+  width: 226px;
+  height: 56px;
+  flex-grow: 0;
+  margin: 0 85px 0 600px;
+  padding: 10px 32px 15px 15px;
+  border-radius: 20px;
+  background-color: #385df9;
+  border-style: none;
+  text-align: left;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+}
+.filtersButton img {
+  margin: 5px 0 0 105px;
+}
+/*End onboaded*/
 /* Start Onboaded i */
 /* Start Filters*/
 .filters {
@@ -47,16 +94,16 @@
   display: flex;
   flex-direction: column;
   /*width: 700px;*/
-  margin: 15px 25px 0px 200px;
+  margin: 15px 0 0 40px;
 }
 /*Start operation type*/
 .operation_Type {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin: 0 550px 0 0;
+  margin-top: 20px;
 }
-.operation_Type p{
+.operation_type_p_onboaded_1{
   width: 69px;
   height: 24px;
   flex-grow: 0;
@@ -143,23 +190,7 @@
   text-align: left;
   color: #224a5d;
 }
-.filtersButton {
-  width: 226px;
-  height: 56px;
-  flex-grow: 0;
-  margin: 48px 186.1px 68px 500px;
-  padding: 10px 32px 15px 15px;
-  border-radius: 20px;
-  background-color: #385df9;
-  border-style: none;
-  text-align: left;
-  color: #fff;
-  font-family: Poppins;
-  font-size: 24px;
-}
-.filtersButton img {
-  margin: 5px 0 0 105px;
-}
+
 .details {
   display: flex;
   flex-direction: row;
@@ -204,6 +235,21 @@
 }
 /* End onboaded ii */
 /* Start onboaded iii */
+.operation_type_p_onboaded_3{
+  width: 431px;
+  height: 24px;
+  flex-grow: 0;
+  margin: 0 249px 0 0;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #172d45;
+}
 /* End onboaded iii*/
 /* Start Portfolio */
 .Header {
