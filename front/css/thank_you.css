@@ -46,3 +46,7 @@ font-size: 18px;
 color: #fff;
 border-style: none;
 }
+a{
+    text-decoration: none;
+    color: #fff;
+}
