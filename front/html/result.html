@@ -7,6 +7,7 @@
         <title>DreamHouse</title>
         <link rel="stylesheet" href="../css/main.css"/>
         <link rel="stylesheet" href="../css/onboaded.css"/>
+        <link rel="stylesheet" href="../css/details_Result.css">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <!-- Font Awesome -->
         <link rel="stylesheet" href="css/all.min.css" />
@@ -19,7 +20,8 @@
         <!-- Start Header -->
         <div class="header" id="header">
             <div class="container">
-            <a href="#" class="logo"><img src="../assets/logo.png" alt="Dream House"></a>
+              <a href="../html/onboaded iii.html"><img src="../assets/4Vector.png"></a>
+            <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="Dream House"></a>
             <ul class="main-nav">
                 <li>
                 <button class="myAccount">
@@ -29,7 +31,7 @@
                 <div class="mega-menu">
                     <ul class="links">
                     <li>
-                        <a href="#"><i class="far fa-comments fa-fw"></i> logIn/signUp</a>
+                        <a href="sign_in.html">logIn/signUp</a>
                     </li>
                     </ul>
                 </div>
@@ -41,11 +43,28 @@
         <!-- End Header -->
         <!-- Start Landing -->
         <div class="house_details">
-          <p>Here you go <img src="../assets/happy-face 1.png"></p>
-          <p>Here are the best places appropriate for you</p>
-          <img src="../assets/file-20210624-19-1t2fnjk.png" alt="house Price">
-          <p>Price in this place</p>
-          <h5>700K EGP</h5>
+          <div class="house_details_row">
+            <p id="house_details_p_1">Here you go &nbsp;&nbsp; 
+              <img src="../assets/happy-face 1.png">
+            </p>
+            <div class="house_details_row_b">
+              <button>
+                <img src="../assets/funnel 2.png">
+                sort by: <strong>price</strong> </button>
+              <button>
+                <img src="../assets/setup-preferences 1.png">
+                Edit your <strong>filter</strong> </button>
+            </div>
+          </div>
+          <div class="house_details_row">
+            <input type="text" id="edit_price" placeholder="700k :  900K">
+            <input type="text" id="edit_city" placeholder="Cairo">
+          </div>
+          <p id="house_details_p_2">Here are the best places appropriate for you</p>
+          <img src="../assets/file-20210624-19-1t2fnjk.png" alt="house Price" id="ML_Graph">
+          <p id="house_details_p_3">Price in this place</p>
+          <h2>700K EGP</h2>
+          <h4> <img src="../assets/arrow-up.png"> 7.00%</h4>
         </div>
         <!-- End Landing -->
         <!-- Start Popular-->
@@ -89,11 +108,12 @@
     <!-- End Popular-->
         <!-- Start Portfolio -->
         <div class="portfolio" id="portfolio">
-            <div class="PortContainer">
-              <div class="portText">
-                <h2 class="Header">Choices that are appropriate for your need</h2>
-              </div>
-              <div class="portfolio-content">
+          <div class="PortContainer">
+            <div class="portText">
+              <h2 class="Header">Choices that are appropriate for your need</h2>
+            </div>
+            <div class="portfolio-content">
+              <a href="details_page.html">
                 <div class="PortCard">
                   <img class="cardImg" src="../assets/House101.jpeg" alt="" />
                   <div class="info">
@@ -104,6 +124,8 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 7</p>
                   </div>
                 </div>
+              </a>
+              <a href="details_page.html">
                 <div class="PortCard">
                   <img class="cardImg" src="../assets/House102.jpg" alt="" />
                   <div class="info">
@@ -114,6 +136,8 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 3</p>
                   </div>
                 </div>
+              </a>
+              <a href="details_page.html">
                 <div class="PortCard">
                   <img class="cardImg" src="../assets/House103.jpg" alt="" />
                   <div class="info">
@@ -124,6 +148,8 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
                   </div>
                 </div>
+              </a>
+              <a href="details_page.html">
                 <div class="PortCard">
                     <img class="cardImg" src="../assets/House101.jpeg" alt="" />
                     <div class="info">
@@ -133,61 +159,72 @@
                       <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
                     </div>
+                </div>
+              </a>
+              <a href="details_page.html">
+                <div class="PortCard">
+                  <img class="cardImg" src="../assets/House102.jpg" alt="" />
+                  <div class="info">
+                    <h3 class="cardH">EGP 300K</h3>
+                    <p class="cardP">The Pavilion</p>
+                    <p class="cardP">5441 NE NEast River Rd, Chicago, IL 60656</p>
+                    <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
                   </div>
-                  <div class="PortCard">
-                    <img class="cardImg" src="../assets/House102.jpg" alt="" />
-                    <div class="info">
-                      <h3 class="cardH">EGP 300K</h3>
-                      <p class="cardP">The Pavilion</p>
-                      <p class="cardP">5441 NE NEast River Rd, Chicago, IL 60656</p>
-                      <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
-                    </div>
+                </div>
+              </a>
+              <a href="details_page.html">
+                <div class="PortCard">
+                  <img class="cardImg" src="../assets/House103.jpg" alt="" />
+                  <div class="info">
+                    <h3 class="cardH">EGP 300K</h3>
+                    <p class="cardP">The Pavilion</p>
+                    <p class="cardP">5441 NE NEast River Rd, Chicago, IL 60656</p>
+                    <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
                   </div>
-                  <div class="PortCard">
-                    <img class="cardImg" src="../assets/House103.jpg" alt="" />
-                    <div class="info">
-                      <h3 class="cardH">EGP 300K</h3>
-                      <p class="cardP">The Pavilion</p>
-                      <p class="cardP">5441 NE NEast River Rd, Chicago, IL 60656</p>
-                      <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
-                    </div>
+                </div>
+              </a>
+              <a href="details_page.html">
+                <div class="PortCard">
+                  <img class="cardImg" src="../assets/House101.jpeg" alt="" />
+                  <div class="info">
+                    <h3 class="cardH">EGP 300K</h3>
+                    <p class="cardP">The Pavilion</p>
+                    <p class="cardP">5441 NE NEast River Rd, Chicago, IL 60656</p>
+                    <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
                   </div>
-                  <div class="PortCard">
-                    <img class="cardImg" src="../assets/House101.jpeg" alt="" />
-                    <div class="info">
-                      <h3 class="cardH">EGP 300K</h3>
-                      <p class="cardP">The Pavilion</p>
-                      <p class="cardP">5441 NE NEast River Rd, Chicago, IL 60656</p>
-                      <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
-                    </div>
+                </div>
+              </a>
+              <a href="details_page.html">
+                <div class="PortCard">
+                  <img class="cardImg" src="../assets/House102.jpg" alt="" />
+                  <div class="info">
+                    <h3 class="cardH">EGP 300K</h3>
+                    <p class="cardP">The Pavilion</p>
+                    <p class="cardP">5441 NE NEast River Rd, Chicago, IL 60656</p>
+                    <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
                   </div>
-                  <div class="PortCard">
-                    <img class="cardImg" src="../assets/House102.jpg" alt="" />
-                    <div class="info">
-                      <h3 class="cardH">EGP 300K</h3>
-                      <p class="cardP">The Pavilion</p>
-                      <p class="cardP">5441 NE NEast River Rd, Chicago, IL 60656</p>
-                      <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
-                    </div>
+                </div>
+              </a>
+              <a href="details_page.html">
+                <div class="PortCard">
+                  <img class="cardImg" src="../assets/House103.jpg" alt="" />
+                  <div class="info">
+                    <h3 class="cardH">EGP 300K</h3>
+                    <p class="cardP">The Pavilion</p>
+                    <p class="cardP">5441 NE NEast River Rd, Chicago, IL 60656</p>
+                    <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
                   </div>
-                  <div class="PortCard">
-                    <img class="cardImg" src="../assets/House103.jpg" alt="" />
-                    <div class="info">
-                      <h3 class="cardH">EGP 300K</h3>
-                      <p class="cardP">The Pavilion</p>
-                      <p class="cardP">5441 NE NEast River Rd, Chicago, IL 60656</p>
-                      <p class="cardP">Area: 400 mts2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms: 4</p>
-                    </div>
-                  </div>
-              </div>
+                </div>
+              </a>
             </div>
-        </div>
-        <!-- End Portfolio -->
+          </div>
+      </div>
+      <!-- End Portfolio -->
         <!-- Start Footer -->
         <div class ="footer">
             <div class="container">
