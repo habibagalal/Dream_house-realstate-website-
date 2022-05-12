@@ -7,6 +7,7 @@
         <title>DreamHouse</title>
         <link rel="stylesheet" href="../css/main.css"/>
         <link rel="stylesheet" href="../css/onboaded.css"/>
+        <link rel="stylesheet" href="../css/details_Result.css">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <!-- Font Awesome -->
         <link rel="stylesheet" href="css/all.min.css" />
@@ -19,7 +20,8 @@
         <!-- Start Header -->
         <div class="header" id="header">
             <div class="container">
-            <a href="#" class="logo"><img src="../assets/logo.png" alt="Dream House"></a>
+              <a href="../html/onboaded iii.html"><img src="../assets/4Vector.png"></a>
+            <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="Dream House"></a>
             <ul class="main-nav">
                 <li>
                 <button class="myAccount">
@@ -41,11 +43,28 @@
         <!-- End Header -->
         <!-- Start Landing -->
         <div class="house_details">
-          <p>Here you go <img src="../assets/happy-face 1.png"></p>
-          <p>Here are the best places appropriate for you</p>
-          <img src="../assets/file-20210624-19-1t2fnjk.png" alt="house Price">
-          <p>Price in this place</p>
-          <h5>700K EGP</h5>
+          <div class="house_details_row">
+            <p id="house_details_p_1">Here you go &nbsp;&nbsp; 
+              <img src="../assets/happy-face 1.png">
+            </p>
+            <div class="house_details_row_b">
+              <button>
+                <img src="../assets/funnel 2.png">
+                sort by: <strong>price</strong> </button>
+              <button>
+                <img src="../assets/setup-preferences 1.png">
+                Edit your <strong>filter</strong> </button>
+            </div>
+          </div>
+          <div class="house_details_row">
+            <input type="text" id="edit_price" placeholder="700k :  900K">
+            <input type="text" id="edit_city" placeholder="Cairo">
+          </div>
+          <p id="house_details_p_2">Here are the best places appropriate for you</p>
+          <img src="../assets/file-20210624-19-1t2fnjk.png" alt="house Price" id="ML_Graph">
+          <p id="house_details_p_3">Price in this place</p>
+          <h2>700K EGP</h2>
+          <h4> <img src="../assets/arrow-up.png"> 7.00%</h4>
         </div>
         <!-- End Landing -->
         <!-- Start Popular-->
