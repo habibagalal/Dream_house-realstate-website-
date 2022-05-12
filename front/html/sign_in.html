@@ -8,10 +8,7 @@
  <!-- main css file -->
     <link rel="stylesheet" href="../css/find.css">
 <!-- render all elemnts normally -->
-    <link rel="stylesheet" href="../css/normlize.css">
-    <link rel="stylesheet" href="../css/project.css">
     <link rel="stylesheet" href="../css/sign.css">
-    <link rel="stylesheet" href="../css/other2.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/all.min.css">
 <!-- google fonts -->
@@ -22,19 +19,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Work+Sans:ital,wght@0,400;0,700;0,800;1,200;1,500&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/cdd3632853.js" crossorigin="anonymous"></script>
+<style>
+
+</style>
 </head>
 <body>
-    <div class="header" id="header">
-        <div class="container">
-
-               <a href="#" class="logo"><img src="../assets/logo.png" alt="Dream House"></a>
-
-        </div>    
+    <div class="header" id="sign_header">
+       <a href="#" class="logo"><img src="../assets/logo.png" alt="Dream House"></a>
     </div>
     <div class="sign_in_body">
         <div class="sign">
+            <img src="../assets/login-1.png" alt="logIn">
             <p class="welcome">Welcome back! sign in</p>
-            </div>
+        </div>
         <div class=mainSocial>
             <div class="social" id="social1">
                 <button>   
@@ -43,34 +40,33 @@
         
             </div>
             <div class="social">
-                <button>   <a><img alt="Webapp founder" src="../assets/facebook-icon.png"></a>  Sign in with facebook</button>
-        
+                <button> 
+                    <img alt="Webapp founder" src="../assets/facebook-icon.png">
+                    Sign in with facebook</button>
             </div>
         </div>
     
         <div class="allForm">
             <div class="user_info">
                 <label>Email address</label>
-                <input class="input" type="email" placeholder="Name@gmail.com" name="name"/> 
+                <input class="input" id="input1" type="email" placeholder="             Name@gmail.com" name="name"/> 
                 </div>
             <div class="user_info">
                <label>Password</label>
-            <input class="input" type="password" placeholder=" *** " name="password"/>
+                <input class="input" id="input2" type="password" placeholder="            *********** " name="password"/>
             </div>
             <div class="newSign">
-                <button class="newSet"> <lable>Sign in  </lable>
-                    <label> > </label></button>
+                <button class="newSet"><label>Sign in</label><label>></label></button>
             </div>
              <div class="newUser">
-                 <p>New user ,</p>
-                 <button>Create your account</button>
+                 New user ,
+                 <a>Create your account</a>
              </div>
         </div>
     </div>
-    <!--
     <div class="footer">
         <p class="copyright">Dream House </p>
-    </div>-->
+    </div>
    
 </body>
 </html>

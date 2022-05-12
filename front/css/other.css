@@ -666,7 +666,6 @@ span {
   margin-top:170px;
   color: #172d45;
   height: 24px;
-  color: #172d45;
   font-weight: 500;
   font-size: 14px;
   justify-content: center;
@@ -685,7 +684,6 @@ span {
   width: 360px;
   height: 48px;
   font-size: 16px;
- 
 }
 
 .user_info {
@@ -709,8 +707,6 @@ span {
   font-family: Poppins;
   font-weight: 500;
   display: inline;
-
- 
 }
 
 .newUser button {

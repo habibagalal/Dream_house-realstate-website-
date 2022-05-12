@@ -3,190 +3,38 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    body {
-        background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
-        background-size: cover;
-        height: 100vh;
+#more {display: none;}
+p{
+      border-style: ridge;
+      border-radius: 25px;
+      width: 790px;
+      padding: 48px;
     }
-    .box {
-        width: 40%;
-        margin: 0 auto;
-        background: rgba(255,255,255,0.2);
-        padding: 35px;
-        border: 2px solid #fff;
-        border-radius: 20px/50px;
-        background-clip: padding-box;
-        text-align: center;
-    }
-
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid #06D85F;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.button:hover {
-  background: #06D85F;
-}
-
-.overlay {
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-    background: #fff;
-    border-radius: 20px;
-    width: 42%;
-    height: 405px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 0 auto;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-  z-index: 3;
-}
-
-.popup {
-    margin-top: 20px;
-  padding: 20px;
-  width: 90%;
-  height: 100%;
-  background: #fff;
-  border-radius: 5px;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popImg {
-  margin: 5px 0;
-  width: 70px;
-  height: 72px;
-}
-.popup .close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-    opacity: 0.8;
-}
-.popup h2 {/*
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;*/
-  margin: 5px 0;
-  color: #305567;
-  font-size: 31px;
-  font-family: "Poppins";
-  font-weight: 500;
-}
-.popP {
-  margin: 6px 0;
-  text-align: center;
-  font-family: Poppins;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  color: #4c5355;
-}
-
-.popup .content {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.popContP {
-  margin: 10px 0 0 85px;
-  text-align: left;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #172d45;
-}
-.popup input {
-  margin: 0 0 0 85px;
-  height: 50px;
-  width: 390px;
-  border-radius: 10px;
-  border: solid #a0a7af;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #172d45;
-}
-.popup input::placeholder {
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #172d45;
-  height: 100%;
-  background-image: url('../assets/Vector.png');
-  background-position: 10px -0.2px; 
-    background-repeat: no-repeat;
-  
-}
-#nameEnter {
-  margin: 10px;
-  width: 54px;
-  height: 50px;
-  border: solid #a0a7af;
-  border-radius: 10px;
-  background-color: #fff;
-}
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-}
 </style>
 </head>
 <body>
-    <div class="box">
-	    <a class="button" href="#popup">Let me Pop up</a>
-    </div>
 
-    <div id="popup" class="overlay">
-	    <div class="popup">
-            <img class="popImg" src="../assets/man-add 1.png">
-            <h2>What is your name?</h2>
-            <p class="popP">We just need your name to create account for you</p>
-            <a class="close" href="#"><img src="../assets/Group 8.png" alt="close"></a>
-            <p class="popContP">Your Name</p>
-            <div class="content">
-                <input type="text" id="Name" name="yourName" placeholder="         Full Name" >
-                <button id="nameEnter"><a href="../html/onboaded i.html"><img src="../assets/3Vector.png"> </a></button>
-            </div>
-	    </div>
-    </div>
+<h2>Read More Read Less Button</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+<a onclick="myFunction()" id="myBtn">Read more</a>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
 </body>
 </html>

@@ -180,6 +180,12 @@
   text-align: left;
   color: #224a5d;
 }
+#sell3_operation_type{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  margin-right: 570px;
+}
 /*Select boxes*/
 /*property felters*/
 /*property pic and vid*/
@@ -232,13 +238,105 @@
   margin: 13px 0 24px 0;
   font-family: Poppins;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: rgba(0, 0, 0, 0.64);
 }
+.pic_vid_container input {
+  visibility: hidden;
+}
+.pic_vid_container label{
+  content: 'Upload your images';
+    border-radius: 10px;
+    background-color: #385df9;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 148px;
+    height: 40px;
+    margin: 24px 85px 0;
+    cursor: pointer;
+    color: #fff;
+}
+
 /*property pic and vid*/
+.details_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.SelectLocation {
+  margin: 32px 14px 20px 55px;
+}
+/*small*/
+@media (min-width:768px) {
+.container2 {
+  width: 750px;
+}
+}
+/*medium*/
+
+@media (min-width:992px) {
+.container2 {
+  width: 970px;
+  padding-left: 60px;
+}
+}
+/*large*/
+@media (min-width:1200px) {
+.container2 {
+  width: 1170px;
+  padding-left: 130px;
+}
+}
+.SelectLocation input {
+  display: block;
+  border: solid 1px #a0a7af;
+  border-radius: 10px;
+  width: 388px;
+  margin-top: 12px;
+  height: 48px;
+  padding-left: 24px;
+  color: #000;
+  font-size: 14px;
+}
+.SelectLocation label {
+  color: #172d45;
+  font-size: 16px;
+}
+.details_coloumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.details_coloumn p{
+  margin-top: 32px;
+  color: #172d45;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  width: 767px;
+  height: 24px;
+}
+.details_coloumn button{
+  padding: 19px 90px 18px 90px;
+  border-radius: 20px;
+  background-color: #385df9;
+  border-style: none;
+  color: #fff;
+  font-family: poppins;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-left: 650px;
+}
 /*End Form*/
 /*End Sell 3*/

@@ -14,6 +14,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" />
+    <style>
+    #more {display: none;}
+    .describtion_p{
+      border: solid 1px #ababac;
+      margin: 0 0 24px 130px;
+      border-radius: 25px;
+      width: 790px;
+      padding: 48px;
+      font-family: poppins;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.64);
+    }
+    .describtion h2{
+      margin: 70px 0 24px 130px;
+      text-align: left;
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: bolder;
+    }
+    </style>
   </head>
   <body>
     <!-- Start Header -->
@@ -42,6 +64,53 @@
       </div>
     </div>
     <!-- End Header -->
+        <!-- Start Describtion-->
+        <div class="describtion">
+          <h2 class="detail_page_special_heading">description from seller</h2>
+          <p class="describtion_p">
+            We offer you the lowest download rate and the lowest price per meter in the new Narges: 7.700 pounds<br>
+            - Lowest down payment in New Narges: 15% <br>
+            Areas starting from 130 square meters<span id="dots">...</span><span id="more"><br>
+            Facade: eastern / sea<br>
+            - We are interested in carefully selecting the locations of the land to be distinguished with direct views of green spaces and main streets<br>
+            - Building on the legal percentage allocated to the device<br>
+            We are interested in selecting the best engineers to apply the best specifications<br>
+            We take care of the best use of the interior spaces<br>
+            We take care of the best facades and architectural entrances
+            <br>- All projects have a central shower and intercom for all units<br>
+            All projects have garages and warehouses<br>
+            Security and guarding for all projects<br>
+            Elevators for all projects
+    
+            <br>- Strictly adhere to schedule
+    
+            <br>After-sales service for customers
+    
+            <br>** Location: South of New Cairo City - Narges Extension
+    
+            <br>* Surrounded by (to the north) Al-Narjis neighborhood, buildings, Mountain View Square, the Southern 90th Street, the North 90th Street, and the American University
+    
+            <br>* (south) Ain Sukhna Road | Hurghada and the ring road
+    
+            <br>* (East) Mohamed Naguib axis, which connects to Suez Road and Al-Rehab City
+    
+            <br>* (West) The German University GUC, Fatima Al-Sharbatly Mosque, West Arbela, the Third Settlement and the rest of the neighborhoods
+    
+            <br>** Site Features:
+    
+            <br>* It is located in the distinguished square in New Cairo, which is in the middle of the Fifth Settlement,
+             and therefore it is characterized by a very strategic and vital location Directly in front of the Narges neighborhood,
+              buildings and Gamal Abdel Nasser axis
+            <br>* Only a minute from the Mohamed Naguib axis, which leads to the Suez and Al-Rehab road
+            <br>* Only minutes from the Southern 90th Street and the Ring Road
+            <br>* Next to the German University GUC, Fatima Al Sharbatly Mosque and Mountain View Square
+            <br>* It is mediated from all sides by a group of large and high-end compounds<br>
+          </span>
+            <a onclick="myFunction()" id="myBtn">Read More</a>
+          </p>
+          
+        </div>
+        <!-- End Describtion-->
     <!-- Start Portfolio -->
     <div class="portfolio" id="portfolio">
         <div class="PortContainer">
@@ -119,5 +188,22 @@
         <p class="copyright"> Dream House </p>
       </div>
     <!-- End Footer -->
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
   </body>
 </html>
