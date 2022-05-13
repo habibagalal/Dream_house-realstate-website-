@@ -110,6 +110,286 @@
 /*End landing*/
 /*End result*/
 /*Start Details*/
+/*House details*/
+.house-details{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+.section_1{
+  margin: 32px 113px 16px 237px;
+}
+.section_2{
+  margin: 32px 270px 0 0;
+}
+#house_address{
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  color: #2f2d4a;
+}
+#house_location{
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.64);
+  display: flex;
+  align-items: center;
+}
+#house_location img{
+  width: 21px;
+  height: 20.4px;
+  opacity: 0.5;
+}
+#price_1{
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: bold;
+  color: #385df9;
+  margin-bottom: 0;
+}
+#rooms_1{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+/*Slider*/
+.mySlides {
+	display: none;
+}
+
+.mySlides img{
+	width: 894px;
+  height: 469px;
+  border-radius: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1000px;
+  height: 469px;
+  position: relative;
+  margin: 14px 0 0 237px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 4px 0 0 15px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*slider*/
+
+/*house describtion and details*/
+.house_describtion_details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 47px 0 38px 0;
+}
+.details_nav{
+  border-bottom: solid 1px #ababac;
+  margin: 0 0 0 120px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+.details_nav a{
+  text-decoration: none;
+  padding-right: 50px;
+  font-weight: bold;
+  font-family: Poppins;
+  font-size: 16px;
+}
+.general h2{
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: left;
+  color: #2f2d4a;
+  margin-left: 120px;
+}
+.location{
+  margin-left: 120px;
+}
+.general_titles{
+  opacity: 0.75;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  color: #2f2d4a;
+}
+.main_points{
+  margin-left: 120px;
+}
+.main_points_p{
+  border: solid 1px #ababac;
+  padding: 48px;
+  border-radius: 25px;
+}
+.main_points_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main_points_p_2{
+  margin: 0;
+}
+.points_p_1{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #000;
+}
+.points_p_2{
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: left;
+  color: #000;
+}
+.cost_Prediction{
+  margin-left: 120px;
+}
+.cost_Prediction h2{
+  margin-left: 0;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+}
+.cost_Prediction h4{
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: 0.73px;
+  text-align: left;
+  color: #4aaf05;
+}
+#ML_Graph_details{
+  width: 791px;
+  height: 424px;
+}
+.describtion{
+  margin-left: 120px;
+}
+
+#more {display: none;}
+#more_2 {display: none;}
+#more_3 {display: none;}
+
+.describtion_p{
+      border: solid 1px #ababac;
+      margin-bottom: 24px;
+      border-radius: 25px;
+      width: 790px;
+      padding: 48px;
+      font-family: poppins;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.64);
+}
+.describtion h2{
+      margin: 70px 0 24px 130px;
+      text-align: left;
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: bolder;
+}
+.appointment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 392px;
+  height: 250px;
+  margin: 71px 64px 12px 32px;
+  padding: 32px 56px;
+  border-radius: 20px;
+  border: solid 1px #2c68f6;
+}
+.appointment button{
+  width: 280px;
+  height: 41px;
+  margin: 32px 0 8px;
+  padding: 10px 88px 11px 89px;
+  border-radius: 10px;
+  background-color: #385df9;
+  border-style: none;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 13.6px;
+  font-weight: 600;
+}
+.appointment button:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.appointment p{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+/*house describtion and detaisl*/
+
 /*Start Portfolio*/
 .detail_page_special_heading{
     width: 533px;
