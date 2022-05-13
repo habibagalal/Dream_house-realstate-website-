@@ -1,6 +1,7 @@
 <!-- Start Header -->
-{%load static%} {%block content%} {%for x in h %} {{x.name}} {{x.condition}}
-{{x.price}} {%endfor %}
+{%load static%} {%block content%} {%for x in pro%} {{pro.name}} {%endfor %}
+<p>{{search.name}}</p>
+
 <div class="header" id="header">
   <div class="container">
     <a href="#" class="logo"
