@@ -24,6 +24,7 @@
 </style>
 </head>
 <body>
+    
     <div class="header" id="sign_header">
        <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="Dream House"></a>
     </div>
@@ -45,11 +46,13 @@
                     Sign in with facebook</button>
             </div>
         </div>
-    
+      <form method="POST"> <!--form start-->
+        {%crf_token%}
         <div class="allForm">
             <div class="user_info">
                 <label>Email address</label>
                 <input class="input" id="input1" type="email" placeholder="             Name@gmail.com" name="name"/> 
+                
                 </div>
             <div class="user_info">
                <label>Password</label>
@@ -63,7 +66,9 @@
                  <a href="sign_in.html"> Sign In</a>
              </div>
         </div>
+       </form>
     </div>
+
     <div class="footer">
         <p class="copyright">Dream House </p>
     </div>

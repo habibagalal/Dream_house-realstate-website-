@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'user.apps.UserConfig',
     'flats.apps.FlatsConfig',
-    'properties.apps.PropertiesConfig'
+
 
 
 

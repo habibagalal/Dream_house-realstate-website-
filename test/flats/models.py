@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 
-class House (models.Model):
+class Property(models.Model):
     name = models.CharField(max_length=150)
     image = models.ImageField(
         upload_to='photos/%y/%m/%d', null=True)
@@ -35,11 +35,15 @@ class House (models.Model):
         return self.name  # return the house name in the admin panel
 
     class Meta:
-        verbose_name = 'House'  # update the name of the class
+        verbose_name = 'Property'  # update the name of the class
         ordering = ['name']  # ordering the objects
 
     def __str__(self):
         return self.name
+
+
+class property_type(models.Model):
+    type = models.ForeignKey(Property, on_delete=models.CASCADE)
 
 
 class Roles(models.Model):
@@ -67,3 +71,9 @@ class Personal_Info(models.Model):
     age = models.PositiveIntegerField(null=True)
     gender = models.CharField(max_length=50)
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+
+
+class Login(models.Model):
+    username = models.CharField(max_length=100)
+    password = models.CharField(max_length=50)
+    h = models.CharField(max_length=100, null=True)
