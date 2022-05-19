@@ -13,9 +13,20 @@
  3. HTML,CSS and JavaScript for front-end 
  ------------------------------------------------------------------------------------------------------------
  # Featuers
- ##crud 
+ ## crud 
  - create
  - delete
  - update
- -read
+ - read
+ ## what user could do 
+ - searching by city name 
+ - upload house he wants to sell
+ - book a meeting for the property owner 
  -------------------------------------------------------------------------------------------------------------------
+# Team 
+- Habiba Galal *Team lead and Backend developer*
+- Noran Zaki *Front-end devekoper*
+- Aya Aboelwafaa *AI Team* 
+- Aya Ebrahem *AI Team*
+- Youssef Ehab *Front-end devekoper*
+- Mohamed Nasr *UI&UX *
