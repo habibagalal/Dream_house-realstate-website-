@@ -29,7 +29,7 @@ class Property(models.Model):
     yr_renovated = models.IntegerField()
     zip_code = models.IntegerField()
     created = models.DateTimeField(default=datetime.now)
-    user = models.ForeignKey(User, on_delete=models.DO_NOTHING, null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
     class Meta:
         verbose_name = 'Property'  # update the name of the class
