@@ -19,7 +19,7 @@ class HomeView(TemplateView):
 
 
 def home(request):
-    return redirect(request, 'pages/index.html')
+    return render(request, 'pages/index.html')
 
 
 def signup(request):
