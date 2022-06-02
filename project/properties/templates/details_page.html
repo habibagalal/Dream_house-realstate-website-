@@ -21,18 +21,19 @@
   <!-- Start slide Show-->
   <div>
     <div class="house-details">
+      {% for house in houses %}
       <div class="section_1">
-        <p id="house_address">In slah al din, Alexandria</p>
+        <p id="house_address">{{house.price}}In slah al din, Alexandria</p>
         <p id="house_location">
           <img src=" {%static 'assets/location-48.png'%}" /> &nbsp; 7031 N London Ave,
           Kansas City, MO 64151
         </p>
       </div>
-      {% for n in note %}
+      
       <div class="section_2">
-        <p id="price_1"  >{{n.price}} </p>
+        <p id="price_1"  >{{house.price}} </p>
         <p id="rooms_1">
-          <img src="{%static 'assets/armchair 1.png'%}"/>  &nbsp; Rooms: {{n.bedrooms}}
+          <img src="{%static 'assets/armchair 1.png'%}"/>  &nbsp; Rooms: {{house.bedrooms}}
         </p>
       </div>
       {%endfor%}

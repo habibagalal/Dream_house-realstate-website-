@@ -29,7 +29,12 @@
         <h1>{{n.title}}</h1>
         {%endfor %} 
         <h1>{{today}}</h1>
-        
+        {% if user.is_authenticated %}
+        <h1>hello</h1>
+
+        {%else %}
+        <h1>hi</h1>
+        {%endif%}
      
         <div class="landContainer">
           <div class="landText">
@@ -41,8 +46,15 @@
               </div>
               <form method='POST'>
                 {% csrf_token %}
-              <div id="popup" class="overlay">
-                <div class="popup">
+                {%if user.is_authenticated%}
+
+
+
+
+
+                {%endif%}
+                <div id="popup" class="overlay">
+                   <div class="popup">
                       <img class="popImg" src= "{%static 'assets/man-add 1.png'%}  ">
                       <h2>What is your name? </h2>
                       <p class="popP">We just need your name to create account for you</p>

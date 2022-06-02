@@ -4,8 +4,14 @@ from datetime import datetime  # create intial datetime value
 from django.contrib.auth.models import User
 from xml.dom.minidom import CharacterData
 from django.forms import CharField
+from users.models import profile
 
-# Create your models here.
+
+class property_type(models.Model):
+    type = models.CharField(max_length=100, null=True)
+
+    def __str__(self):
+        return self.type
 
 
 class Property(models.Model):
@@ -29,7 +35,10 @@ class Property(models.Model):
     yr_renovated = models.IntegerField()
     zip_code = models.IntegerField()
     created = models.DateTimeField(default=datetime.now)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+   # / user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    city = models.CharField(max_length=50, null=True)
+    type = models.ForeignKey(
+        property_type, on_delete=models.CASCADE, null=True)
 
     class Meta:
         verbose_name = 'Property'  # update the name of the class
@@ -39,38 +48,14 @@ class Property(models.Model):
         return self.title  # return the house name in the admin panel
 
 
-class property_type(models.Model):
-    type = models.ForeignKey(Property, on_delete=models.CASCADE)
-
-
-class Roles(models.Model):
-    name = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.name
-
-
-class Profile (models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    role = models.ForeignKey(Roles, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.user
-
-
-class Personal_Info(models.Model):
-    email = models.EmailField(null=True)
-    postalcode = models.IntegerField()
-    city = models.CharField(max_length=50)
-    country = models.CharField(max_length=100)
-    address = models.TextField(null=True)
-    phone = models.IntegerField()
-    age = models.PositiveIntegerField(null=True)
-    gender = models.CharField(max_length=50)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
-
-
-class Login(models.Model):
-    username = models.CharField(max_length=100)
-    password = models.CharField(max_length=50)
-    h = models.CharField(max_length=100, null=True)
+class UploadedProb(models.Model):  # model for user to upload properites
+    type = models.ForeignKey(
+        property_type, on_delete=models.CASCADE, null=True)
+    images = models.ImageField(upload_to='new_photos/%y/%m/%d', null=True)
+    videos = models.FileField(upload_to='videos/%y/%m/%d', null=True)
+    city = models.CharField(max_length=100)
+    address = models.CharField(max_length=300)
+    location = models.URLField()
+    profile = models.OneToOneField(
+        profile, on_delete=models.CASCADE, null=True)
+    created = models.DateTimeField(datetime.now)

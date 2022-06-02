@@ -2,6 +2,11 @@ from django.shortcuts import render
 from django.http import Http404
 from .models import Property
 from django.views.generic import TemplateView
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
+from django.contrib import messages
+from .models import UploadedProb
+from .models import Property
 
 
 # def property(request):
@@ -19,29 +24,52 @@ class Details(TemplateView):
     template_name = 'details_page.html'
 
 
+class HouseView(ListView):
+
+    template_name = 'details_page.html'
+    model = Property
+    context_object_name = "houses"
+
+
+class HouseDetails(DetailView):
+    model = Property
+    context_object_name = "house"
+    template_name = 'details_page.html'
+
+
 class Sell12(TemplateView):
     template_name = 'sell1,2.html'
 
 
 class Sell3(TemplateView):
-    template_name = 'pages/sell 3.html'
+    template_name = 'sell 3.html'
 
 
 class Sell4(TemplateView):
-    template_name = 'pages/sell-4.html'
+    template_name = 'sell-4.html'
 
 
 class Filter(TemplateView):
-    template_name = 'pages/onboaded i.html'
+    template_name = 'onboaded i.html'
 
 
 class Filter2(TemplateView):
-    template_name = 'pages/onboaded ii.html'
+    template_name = 'onboaded ii.html'
 
 
 class Filter3(TemplateView):
-    template_name = 'pages/onboaded iii.html'
+    template_name = 'onboaded iii.html'
 
 
 class ThankYou(TemplateView):
     template_name = 'thank_you.html'
+
+
+def upload(request):
+    if request.method == 'POST':
+        images = ['']
+
+        new = UploadedProb.objects.create_new(images=images)
+
+    else:
+        return(request, 'pages/index.html')

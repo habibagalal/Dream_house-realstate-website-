@@ -70,13 +70,14 @@ def signin(request):
         if user is not None:
 
             login(request, user)
+            fname = user.first_name
 
-            return render(request, "pages/index.html")
+            return render(request, "pages/index.html", {'fname': fname})
         else:
             messages.error(request, "Bad Credentials!!")
             return redirect('signup')
 
-    return render(request, "signin.html")
+    return render(request, "sign_in.html")
 
 
 def signout(request):
