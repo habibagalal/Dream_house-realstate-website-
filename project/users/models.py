@@ -24,4 +24,9 @@ class Personal_Info(models.Model):
 
 class profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
-    type = models.OneToOneField(Type, on_delete=models.CASCADE, null=True)
+    type = models.ForeignKey(Type, on_delete=models.CASCADE, null=True)
+    name = models.CharField(max_length=50, null=True)
+    active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.name

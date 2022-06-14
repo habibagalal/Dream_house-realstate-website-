@@ -58,4 +58,4 @@ class UploadedProb(models.Model):  # model for user to upload properites
     location = models.URLField()
     profile = models.OneToOneField(
         profile, on_delete=models.CASCADE, null=True)
-    created = models.DateTimeField(datetime.now)
+    created = models.DateTimeField(default=datetime.now)

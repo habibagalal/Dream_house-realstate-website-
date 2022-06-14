@@ -135,13 +135,13 @@
               <p class="points_p_1">
                 <img src="{%static 'assets/money-bag 3.png'%}" />&nbsp; Price
               </p>
-              <p class="points_p_2">EGP 850K</p>
+              <p class="points_p_2">{{house.price}}EGP 850K</p>
             </div>
             <div class="points">
               <p class="points_p_1">
                 <img src="{%static 'assets/full-screen 1.png'%}" />&nbsp; Area
               </p>
-              <p class="points_p_2">1400 mts2</p>
+              <p class="points_p_2"> {{house.bedrooms}}1400 mts2</p>
             </div>
             <div class="points">
               <p class="points_p_1">
@@ -157,6 +157,7 @@
             </div>
           </div>
           <p class="main_points_p_2">
+            {{house.view}}
             Luxurious and upgraded, this 4 bedroom,<br />
             4.5 bathroom home of 5,281 sq. ft.<br />
             (including poolhouse, per independent third-party measurement)
