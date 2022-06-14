@@ -1,0 +1,42 @@
+{%load static %}
+
+<div class="header" id="header">
+  <div class="container">
+    <a href="#" class="logo"
+      ><img src=" {%static 'assets/logo.png'%} " alt="Dream House"
+    /></a>
+    <ul class="main-nav">
+      <li><a href="{%url 'about'%}">About Us </a></li>
+      <li><a href="{%url 'sell'%}">Sell your house </a></li>
+      <li><a href="#Explore_div">Explore properties </a></li>
+
+      <li>
+        <button class="myAccount">
+          <img src="{%static 'assets/Vector.png'%}" /> &nbsp;&nbsp;&nbsp;&nbsp;
+          My Account
+          <br />
+        </button>
+        <!-- Start Megamenu -->
+        <div class="mega-menu">
+          <ul class="links">
+            <li>
+              <a href="{%url 'signup'%}">
+                <i class="far fa-comments fa-fw"></i> logIn/signUp</a
+              >
+            </li>
+
+            <li>
+              <a href="">Account Settings</a>
+            </li>
+            <li>
+              <a href="{%url 'signout'%}">
+                <i class="far fa-comments fa-fw"></i> signout</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- End Megamenu -->
+      </li>
+    </ul>
+  </div>
+</div>
