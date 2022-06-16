@@ -1,53 +1,37 @@
-{%load static%}
+{%load static %}
 
-<!--Start Header-->
 <div class="header" id="header">
   <div class="container">
-    <a href="../pages/index.html" class="logo"
-      ><img src="{%static  'assets/logo.png'%}" alt="Dream House"
+    <a href="#" class="logo"
+      ><img src=" {%static 'assets/logo.png'%} " alt="Dream House"
     /></a>
     <ul class="main-nav">
+      <li><a href="{%url 'about'%}">About Us </a></li>
+      <li><a href="{%url 'sell'%}">Sell your house </a></li>
+      <li><a href="#Explore_div">Explore properties </a></li>
+
       <li>
         <button class="myAccount">
-          <img src="{%static  'assets/Vector.png'%}" />
-          &nbsp;&nbsp;&nbsp;&nbsp; My Account <br />
-        </button>
-        <!-- Start Megamenu -->
-        <div class="mega-menu">
-          <ul class="links">
-            <li>
-              <a href="{%url 'login'%}"> logIn/signUp</a>
-            </li>
-            <li>
-              <a href=" {%url 'setting'%}">Account Settings</a>
-            </li>
-          </ul>
-        </div>
-        <!-- End Megamenu -->
-      </li>
-    </ul>
-  </div>
-</div>
-<!--End Header-->
-<div class="header" id="header">
-  <div class="container">
-    <a href="../index.html" class="logo"
-      ><img src="{%static  'assets/logo.png'%}" alt="Dream House"
-    /></a>
-    <ul class="main-nav">
-      <li><a href="aboutUs.html">About Us </a></li>
-      <li><a href="sell 3.html">Sell your house </a></li>
-      <li><a href="../index.html#features">Explore properties </a></li>
-      <li>
-        <button class="myAccount">
-          <img src="../assets/Vector.png" /> &nbsp;&nbsp;&nbsp;&nbsp; My Account
+          <img src="{%static 'assets/Vector.png'%}" /> &nbsp;&nbsp;&nbsp;&nbsp;
+          My Account
           <br />
         </button>
         <!-- Start Megamenu -->
         <div class="mega-menu">
           <ul class="links">
             <li>
-              <a href="sign_in.html">logIn/signUp</a>
+              <a href="{%url 'signup'%}">
+                <i class="far fa-comments fa-fw"></i> logIn/signUp</a
+              >
+            </li>
+
+            <li>
+              <a href="">Account Settings</a>
+            </li>
+            <li>
+              <a href="{%url 'signout'%}">
+                <i class="far fa-comments fa-fw"></i> signout</a
+              >
             </li>
           </ul>
         </div>
