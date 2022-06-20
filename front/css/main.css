@@ -254,7 +254,7 @@ ul {
 }
 .header .mega-menu {
   position: absolute;
-  height: 85px;
+  height: 210px; /*update here*/
   width: 200px;
   right: 30px;
   /*left: 0;*/
@@ -536,10 +536,10 @@ z-index: 3;
 }
 
 .popup {
-  margin: 10% 0 0 30%;
+  margin: 15% 0 0 30%; /*update here*/
 padding: 20px;
-width: 652px;
-height: 405px;
+width: 600px; /*update here*/
+height: 320px; /*update here*/
 background: #fff;
 border-radius: 20px;
 position: relative;
@@ -587,7 +587,7 @@ color: #4c5355;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0 61px 0 0px;
+  /*margin: 0 61px 0 0px;*/ /*update here*/
 }
 
 .popContP {
@@ -632,11 +632,13 @@ background-position: 10px -0.2px;
 }
 #nameEnter {
 margin: 10px;
-width: 54px;
+width: 115px; /*update here*/
 height: 50px;
+font-size: 16px;  /*update here*/
 border: solid #a0a7af;
 border-radius: 10px;
 background-color: #fff;
+cursor: pointer; /*update here*/
 }
 @media screen and (max-width: 700px){
 .box{
