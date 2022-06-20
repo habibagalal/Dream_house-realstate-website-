@@ -18,36 +18,62 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Work+Sans:ital,wght@0,400;0,700;0,800;1,200;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header" id="sign_header">
+    <!--Start Header-->
+    <div class="header" id="header">
+        <div class="container">
         <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="Dream House"></a>
-    </div>
-    <div class="sign_in_body">
-        <div class="sign">
-            <img src="../assets/man-add 1.png" alt="Dream House">
-            <p class="welcome">My account setting</p>
+        <ul class="main-nav">
+            <li><a href="../html/aboutUs.html">About Us </a></li>
+            <li><a href="../html/sell 3.html">Sell your house </a></li>
+            <li><a href="#features">Explore properties </a></li>
+
+            <li>
+            <button class="myAccount">
+                <img src="../assets/Vector.png"> &nbsp;&nbsp;&nbsp;&nbsp; My Account <br>
+            </button>
+            <!-- Start Megamenu -->
+            <div class="mega-menu">
+                <ul class="links">
+                <li>
+                    <a href="../html/create_account.html"> logIn/signUp</a>
+                </li>
+                </ul>
+            </div>
+            <!-- End Megamenu -->
+            </li>
+        </ul>
         </div>
-        <div class="allForm">
+    </div>
+    <!--End Header-->
+    <div class="sign_in_body">
+        <div class="sign_in_landing">
+            <img src="../assets/man-add 1.png" alt="Dream House">
+            <p class="welcome_p">My account setting</p>
+        </div>
+        <form method="POST" class="sign_in_form">
             <div class="user_info">
-                <label>Name</label>
-                <input class="input" id="input3" type="name" placeholder="            your name" name="name"/> 
+                <label>Username</label>
+                <input class="sign_in_input" id="username" type="text" /> 
             </div>
             <div class="user_info">
                 <label>Email address</label>
-                <input class="input" id="input1" type="email" placeholder="             Name@gmail.com" name="name"/> 
+                <input class="sign_in_input" id="email" type="email" /> 
             </div>
             <div class="user_info">
                 <label>Password</label>
-                <input class="input" id="input2" type="password" placeholder="            *********** " name="password"/>
+                <input class="sign_in_input" id="password" type="password"/>
             </div>
             <div class="newSign">
                 <a href="../index.html">
                     <button class="newSet" id="save_setting">Save settings</button></a>
             </div>
-        </div>
+        </form>
     </div>
-    <div class="footer">
+    <!--Start Footer-->
+    <div class="footer" id="sign_in_footer">
         <p class="copyright">Dream House </p>
     </div>
+    <!--End footer-->
     
 </body>
 </html>

@@ -24,40 +24,65 @@
 </style>
 </head>
 <body>
-    
-    <div class="header" id="sign_header">
-       <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="Dream House"></a>
+    <!--Start Header-->
+    <div class="header" id="header">
+        <div class="container">
+        <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="Dream House"></a>
+        <ul class="main-nav">
+            <li><a href="../html/aboutUs.html">About Us </a></li>
+            <li><a href="../html/sell 3.html">Sell your house </a></li>
+            <li><a href="#features">Explore properties </a></li>
+
+            <li>
+            <button class="myAccount">
+                <img src="../assets/Vector.png"> &nbsp;&nbsp;&nbsp;&nbsp; My Account <br>
+            </button>
+            <!-- Start Megamenu -->
+            <div class="mega-menu">
+                <ul class="links">
+                <li>
+                    <a href="../html/create_account.html"> logIn/signUp</a>
+                </li>
+                </ul>
+            </div>
+            <!-- End Megamenu -->
+            </li>
+        </ul>
+        </div>
     </div>
+    <!--End Header-->
+    <!--Start body-->
     <div class="sign_in_body">
-        <div class="sign">
+        <div class="sign_in_landing">
             <img src="../assets/login-1.png" alt="logIn">
-            <p class="welcome">Create new account</p>
+            <p class="welcome_p">Create new account</p>
         </div>
-        <div class=mainSocial>
-            <div class="social" id="social1">
-                <button>   
-                    <img alt="Webapp founder" src="../assets/1534129544.png">
-                    Sign in with google</button>
-        
-            </div>
-            <div class="social">
-                <button> 
-                    <img alt="Webapp founder" src="../assets/facebook-icon.png">
-                    Sign in with facebook</button>
-            </div>
-        </div>
-      <form method="POST"> <!--form start-->
+        <form method="POST" class="sign_in_form"> <!--form start-->
         {%crf_token%}
-        <div class="allForm">
+            <div class="user_info">
+                <label>First Name</label>
+                <input class="sign_in_input" id="fname" type="text"/> 
+            </div>
+            <div class="user_info">
+                <label>Last Name</label>
+                <input class="sign_in_input" id="Lname" type="text"/> 
+            </div>
+            <div class="user_info">
+                <label>Username</label>
+                <input class="sign_in_input" id="Username" type="text"/> 
+            </div>
             <div class="user_info">
                 <label>Email address</label>
-                <input class="input" id="input1" type="email" placeholder="             Name@gmail.com" name="name"/> 
-                
-                </div>
+                <input class="sign_in_input" id="email" type="email"/> 
+            </div>
             <div class="user_info">
                <label>Password</label>
-                <input class="input" id="input2" type="password" placeholder="            *********** " name="password"/>
+                <input class="sign_in_input" id="password" type="password"/>
             </div>
+            <div class="user_info">
+                <label>Confirm password</label>
+                 <input class="sign_in_input" id="confirm_password" type="password"/>
+             </div>
             <div class="newSign">
                 <a href="../index.html"><button class="newSet"><label>Sign in</label><label>></label></button></a>
             </div>
@@ -65,13 +90,30 @@
                 Already have an account,
                  <a href="sign_in.html"> Sign In</a>
              </div>
-        </div>
        </form>
     </div>
+    <!--End body-->
 
-    <div class="footer">
+    <div class="footer" id="sign_in_footer">
         <p class="copyright">Dream House </p>
     </div>
+    <!--Start JS for confirm pass-->
+    <script>
+        var password = document.getElementById("password")
+            , confirm_password = document.getElementById("confirm_password");
+
+        function validatePassword(){
+            if(password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("Passwords Don't Match");
+            } else {
+                confirm_password.setCustomValidity('');
+            }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+    </script>
+    <!--End Js for confirm pass-->
    
 </body>
 </html>
