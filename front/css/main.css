@@ -516,7 +516,57 @@ ul {
 .landing .go-down i {
   animation: bouncing 1.5s infinite;
 }
-/* Start PopUp */
+/* Start PopUps */
+/*log_in_out_msgs*/ /*update start here*/
+.popUpMsg{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(56, 93, 249, 0.15);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+}
+.popUpMsg:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+}
+.popup_msg p{
+  color: #305567;
+  font-family: Poppins;
+  font-size: 20px;
+}
+.popup_msg{
+  margin: 15% 0 0 37%;
+padding: 20px;
+width: 400px;
+height: 200px;
+background: #fff;
+border-radius: 20px;
+position: relative;
+transition: all 5s ease-in-out;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.msg_close{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.msg_close:hover{
+  opacity: 0.8;
+}
+/*log_in_out_msgs*/ /*update end here*/
 .overlay {
   position: fixed;
   top:0;
